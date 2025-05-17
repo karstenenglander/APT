@@ -1,0 +1,3 @@
+C:/Users/karst/Documents/CS/APT/build/CMakeFiles/APT.dir
+C:/Users/karst/Documents/CS/APT/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/karst/Documents/CS/APT/build/CMakeFiles/ZERO_CHECK.dir

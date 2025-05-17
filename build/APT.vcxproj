@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E47B24C-2C79-3E97-8D62-5BF4A4685514}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>APT</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\karst\Documents\CS\APT\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">APT.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">APT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\karst\Documents\CS\APT\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">APT.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">APT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\karst\Documents\CS\APT\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">APT.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">APT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\karst\Documents\CS\APT\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">APT.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">APT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/opencv4" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/libraw" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/lib/mswud"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswud;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswud;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/karst/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/karst/Documents/CS/APT/build/bin/Debug/APT.exe -installedDir C:/Users/karst/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\opencv_highgui4d.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\raw_rd.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\tiffd.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\libprotobufd.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\exiv2.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\\wxmsw32ud_core.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\\wxbase32ud.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\opencv_videoio4d.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\opencv_imgcodecs4d.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\opencv_imgproc4d.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\opencv_core4d.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\lcms2.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\zlibd.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\jasperd.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\jpeg.lib;C:\Users\karst\vcpkg\installed\x64-windows\debug\lib\abseil_dll.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;ws2_32.lib;wininet.lib;oleacc.lib;uxtheme.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/karst/Documents/CS/APT/build/bin/Debug/APT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/karst/Documents/CS/APT/build/bin/Debug/APT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/opencv4" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/libraw" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/lib/mswu"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/karst/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/karst/Documents/CS/APT/build/bin/Release/APT.exe -installedDir C:/Users/karst/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\raw_r.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\tiff.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\libprotobuf.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\sqlite3.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\exiv2.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\\wxmsw32u_core.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\\wxbase32u.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_core4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\lcms2.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\zlib.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\jasper.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\jpeg.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\abseil_dll.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;ws2_32.lib;wininet.lib;oleacc.lib;uxtheme.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/karst/Documents/CS/APT/build/bin/Release/APT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/karst/Documents/CS/APT/build/bin/Release/APT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/opencv4" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/libraw" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/lib/mswu"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/karst/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/karst/Documents/CS/APT/build/bin/MinSizeRel/APT.exe -installedDir C:/Users/karst/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\raw_r.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\tiff.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\libprotobuf.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\sqlite3.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\exiv2.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\\wxmsw32u_core.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\\wxbase32u.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_core4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\lcms2.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\zlib.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\jasper.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\jpeg.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\abseil_dll.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;ws2_32.lib;wininet.lib;oleacc.lib;uxtheme.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/karst/Documents/CS/APT/build/bin/MinSizeRel/APT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/karst/Documents/CS/APT/build/bin/MinSizeRel/APT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/opencv4" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include/libraw" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/include" /external:I "C:/Users/karst/vcpkg/installed/x64-windows/lib/mswu"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;__WXMSW__;WXUSINGDLL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\karst\Documents\CS\APT\include;C:\Users\karst\vcpkg\installed\x64-windows\include\opencv4;C:\Users\karst\vcpkg\installed\x64-windows\include\libraw;C:\Users\karst\vcpkg\installed\x64-windows\include;C:\Users\karst\vcpkg\installed\x64-windows\lib\mswu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/karst/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/karst/Documents/CS/APT/build/bin/RelWithDebInfo/APT.exe -installedDir C:/Users/karst/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\raw_r.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\tiff.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\libprotobuf.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\sqlite3.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\exiv2.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\\wxmsw32u_core.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\\wxbase32u.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\opencv_core4.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\lcms2.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\zlib.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\jasper.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\jpeg.lib;C:\Users\karst\vcpkg\installed\x64-windows\lib\abseil_dll.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;shlwapi.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;version.lib;ws2_32.lib;wininet.lib;oleacc.lib;uxtheme.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/karst/Documents/CS/APT/build/bin/RelWithDebInfo/APT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/karst/Documents/CS/APT/build/bin/RelWithDebInfo/APT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\karst\Documents\CS\APT\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/karst/Documents/CS/APT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/karst/Documents/CS/APT -BC:/Users/karst/Documents/CS/APT/build --check-stamp-file C:/Users/karst/Documents/CS/APT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeSystem.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2ConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\lcms2\lcms2-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-inih\unofficial-inihConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJPEG.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJasper.cmake;C:\mingw64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.30\Modules\FindTIFF.cmake;C:\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.30\Modules\FindZLIB.cmake;C:\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/karst/Documents/CS/APT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/karst/Documents/CS/APT -BC:/Users/karst/Documents/CS/APT/build --check-stamp-file C:/Users/karst/Documents/CS/APT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeSystem.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2ConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\lcms2\lcms2-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-inih\unofficial-inihConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJPEG.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJasper.cmake;C:\mingw64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.30\Modules\FindTIFF.cmake;C:\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.30\Modules\FindZLIB.cmake;C:\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/karst/Documents/CS/APT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/karst/Documents/CS/APT -BC:/Users/karst/Documents/CS/APT/build --check-stamp-file C:/Users/karst/Documents/CS/APT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeSystem.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2ConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\lcms2\lcms2-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-inih\unofficial-inihConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJPEG.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJasper.cmake;C:\mingw64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.30\Modules\FindTIFF.cmake;C:\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.30\Modules\FindZLIB.cmake;C:\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/karst/Documents/CS/APT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/karst/Documents/CS/APT -BC:/Users/karst/Documents/CS/APT/build --check-stamp-file C:/Users/karst/Documents/CS/APT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;C:\Users\karst\Documents\CS\APT\build\CMakeFiles\3.30.4\CMakeSystem.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2ConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\exiv2\exiv2Export.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\expat.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\expat\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\lcms2\lcms2-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\librawTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\libraw\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\nanosvg\NanoSVGTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-inih\unofficial-inihConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfig.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsConfigVersion.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-debug.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets-release.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\wxwidgets\wxWidgetsTargets.cmake;C:\Users\karst\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\karst\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJPEG.cmake;C:\mingw64\share\cmake-3.30\Modules\FindJasper.cmake;C:\mingw64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\share\cmake-3.30\Modules\FindTIFF.cmake;C:\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\share\cmake-3.30\Modules\FindZLIB.cmake;C:\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\karst\Documents\CS\APT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\karst\Documents\CS\APT\src\main.cpp" />
+    <ClCompile Include="C:\Users\karst\Documents\CS\APT\src\DatabaseManager.cpp" />
+    <ClCompile Include="C:\Users\karst\Documents\CS\APT\src\ImageProcessor.cpp" />
+    <ClCompile Include="C:\Users\karst\Documents\CS\APT\src\TimeUtils.cpp" />
+    <ClCompile Include="C:\Users\karst\Documents\CS\APT\src\DatabaseFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\karst\Documents\CS\APT\build\ZERO_CHECK.vcxproj">
+      <Project>{3F6A0BC0-24EE-3E47-8324-8326BA374434}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
