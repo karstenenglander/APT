@@ -61,16 +61,15 @@ The application uses a single table named `files` with the following structure:
         ```bash
         vcpkg install tiff wxwidgets exiv2 opencv4 libraw unofficial-sqlite3 protobuf
         ```
-        *(Note: Adjust package names if necessary for your vcpkg version or target triplet. The `CMakeLists.txt` expects these to be found.)*
 
 2.  **Clone the Repository**:
     ```bash
-    git clone <your-repository-url>
-    cd <repository-name>
+    git clone https://github.com/karstenenglander/Advanced-Photo-Tagger-APT
+    cd Advanced-Photo-Tagger-APT
     ```
 
 3.  **Configure and Build with CMake**:
-    *   The `CMakeLists.txt` specifies a path to the vcpkg toolchain file: `C:/Users/karst/vcpkg/scripts/buildsystems/vcpkg.cmake`. **You will likely need to update this path** to match your vcpkg installation location.
+    *   The `CMakeLists.txt` specifies a path to the vcpkg toolchain file **You will likely need to update this path** to match your vcpkg installation location.
     *   Alternatively, you can remove this line from `CMakeLists.txt` if vcpkg is globally integrated or pass it directly in the CMake command.
 
     ```bash
